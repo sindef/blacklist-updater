@@ -10,9 +10,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"dnsblacklist/internal/config"
-	"dnsblacklist/internal/logger"
-	"dnsblacklist/internal/validator"
+	"blacklistupdater/internal/config"
+	"blacklistupdater/internal/logger"
+	"blacklistupdater/internal/validator"
 )
 
 type State struct {

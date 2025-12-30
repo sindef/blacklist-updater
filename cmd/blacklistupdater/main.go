@@ -7,9 +7,9 @@ import (
 	"os"
 	"time"
 
-	"dnsblacklist/internal/config"
-	"dnsblacklist/internal/fetcher"
-	"dnsblacklist/internal/logger"
+	"blacklistupdater/internal/config"
+	"blacklistupdater/internal/fetcher"
+	"blacklistupdater/internal/logger"
 )
 
 func main() {
@@ -31,7 +31,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	log.Info("Starting dnsblacklist at %s", log.Timestamp())
+	log.Info("Starting blacklistupdater at %s", log.Timestamp())
 	log.Info("Configuration:")
 	log.Info("  Output directory: %s", cfg.OutputDir)
 	log.Info("  Update interval: %d seconds", cfg.Interval)

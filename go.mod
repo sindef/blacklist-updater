@@ -1,4 +1,4 @@
-module dnsblacklist
+module blacklistupdater
 
 go 1.21
 
