@@ -5,7 +5,7 @@ sources:
     filename: stevenblack.txt
   - url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt
     filename: adguard.txt
-    output_format: hosts
+    output_format: dnsmasq
 
 output_dir: ./data
 interval_seconds: 30
