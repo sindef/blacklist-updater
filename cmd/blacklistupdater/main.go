@@ -36,6 +36,7 @@ func main() {
 	log.Info("  Output directory: %s", cfg.OutputDir)
 	log.Info("  Update interval: %d seconds", cfg.Interval)
 	log.Info("  HTTP timeout: %d seconds", cfg.HTTPClient.Timeout)
+	log.Info("  Whitelist entries: %d", len(cfg.Whitelist))
 	log.Info("  Sources: %d", len(cfg.Sources))
 	for i, source := range cfg.Sources {
 		log.Info("    [%d] %s -> %s", i+1, source.URL, source.Filename)
@@ -50,7 +51,7 @@ func main() {
 		Timeout: time.Duration(cfg.HTTPClient.Timeout) * time.Second,
 	}
 
-	f := fetcher.New(client, cfg.OutputDir, log)
+	f := fetcher.New(client, cfg.OutputDir, log, cfg.Whitelist)
 
 	if err := f.FetchAll(cfg.Sources); err != nil {
 		log.Error("Error fetching sources: %v", err)

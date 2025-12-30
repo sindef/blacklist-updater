@@ -27,14 +27,16 @@ type Fetcher struct {
 	outputDir string
 	stateMap  map[string]*State
 	log       *logger.Logger
+	whitelist []string
 }
 
-func New(client *http.Client, outputDir string, log *logger.Logger) *Fetcher {
+func New(client *http.Client, outputDir string, log *logger.Logger, whitelist []string) *Fetcher {
 	return &Fetcher{
 		client:    client,
 		outputDir: outputDir,
 		stateMap:  make(map[string]*State),
 		log:       log,
+		whitelist: whitelist,
 	}
 }
 
@@ -103,9 +105,15 @@ func (f *Fetcher) Fetch(source config.Source) error {
 	f.log.Debug("Content validation passed")
 
 	finalContent := content
+	if len(f.whitelist) > 0 && source.OutputFormat == "" {
+		f.log.Debug("Filtering whitelist entries from raw content")
+		finalContent = formatter.FilterWhitelist(content, f.whitelist)
+		f.log.Debug("Whitelist filtering completed")
+	}
+	
 	if source.OutputFormat == "hosts" {
 		f.log.Debug("Converting content to hosts format")
-		converted, err := formatter.ConvertToHosts(content)
+		converted, err := formatter.ConvertToHosts(content, f.whitelist)
 		if err != nil {
 			f.log.Debug("Format conversion failed: %v", err)
 			return fmt.Errorf("format conversion failed: %w", err)
@@ -114,7 +122,7 @@ func (f *Fetcher) Fetch(source config.Source) error {
 		f.log.Debug("Format conversion completed")
 	} else if source.OutputFormat == "dnsmasq" {
 		f.log.Debug("Converting content to dnsmasq format")
-		converted, err := formatter.ConvertToDNSmasq(content)
+		converted, err := formatter.ConvertToDNSmasq(content, f.whitelist)
 		if err != nil {
 			f.log.Debug("Format conversion failed: %v", err)
 			return fmt.Errorf("format conversion failed: %w", err)
@@ -123,7 +131,7 @@ func (f *Fetcher) Fetch(source config.Source) error {
 		f.log.Debug("Format conversion completed")
 	} else if source.OutputFormat == "rfc1035" {
 		f.log.Debug("Converting content to RFC 1035 format")
-		converted, err := formatter.ConvertToRFC1035(content)
+		converted, err := formatter.ConvertToRFC1035(content, f.whitelist)
 		if err != nil {
 			f.log.Debug("Format conversion failed: %v", err)
 			return fmt.Errorf("format conversion failed: %w", err)

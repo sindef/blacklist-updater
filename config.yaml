@@ -1,6 +1,7 @@
 sources:
   - url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_2.txt
     filename: adaway.txt
+    output_format: hosts
   - url: https://raw.githubusercontent.com/StevenBlack/hosts/refs/heads/master/hosts
     filename: stevenblack.txt
   - url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt
@@ -12,3 +13,8 @@ interval_seconds: 30
 
 http_client:
   timeout_seconds: 30
+
+whitelist:
+ - "google.com"
+ - "*.domain.com"
+ - "*.163.com"

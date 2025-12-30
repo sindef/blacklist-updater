@@ -10,6 +10,7 @@ type Config struct {
 	Sources    []Source `yaml:"sources"`
 	OutputDir  string   `yaml:"output_dir"`
 	Interval   int      `yaml:"interval_seconds"`
+	Whitelist  []string `yaml:"whitelist,omitempty"`
 	HTTPClient struct {
 		Timeout int `yaml:"timeout_seconds"`
 	} `yaml:"http_client"`
