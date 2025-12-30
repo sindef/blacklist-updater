@@ -13,7 +13,14 @@ func ConvertToDNSmasq(content string) (string, error) {
 }
 
 func ConvertToRFC1035(content string) (string, error) {
-	return convert(content, true, false, "rfc1035")
+	result, err := convert(content, true, false, "rfc1035")
+	if err != nil {
+		return "", err
+	}
+	
+	soaRecord := "@\tIN\tSOA\tlocalhost. root.localhost. (\n\t\t1\t\t; serial\n\t\t3600\t\t; refresh\n\t\t1800\t\t; retry\n\t\t604800\t\t; expire\n\t\t86400\t\t; minimum TTL\n)\n"
+	
+	return soaRecord + result, nil
 }
 
 func convert(content string, stripRegex bool, keepWildcard bool, format string) (string, error) {
