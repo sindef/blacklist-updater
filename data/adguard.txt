@@ -223,8 +223,6 @@
 0.0.0.0 cdn.ads-flipp.com
 0.0.0.0 ozbnagojbop.com
 0.0.0.0 185.149.120.173
-/^139\.45\.197\.2(4[0-9]|5[0-4]):/
-/^139\.45\.197\.2(4[0-9]|5[0-4])/
 0.0.0.0 lmj8i.pro
 0.0.0.0 ytru4.pro
 0.0.0.0 at.adtech.redventures.io
@@ -317,8 +315,8 @@
 0.0.0.0 wonderful-day.club
 0.0.0.0 bloxplay.com
 0.0.0.0 berangkasilmu.com
-||fxhpaoxqyajvmdg.
-||rgfftupf.
+0.0.0.0 fxhpaoxqyajvmdg
+0.0.0.0 rgfftupf
 0.0.0.0 japanhotties.jp
 0.0.0.0 getmackeepersoftpro.xyz
 0.0.0.0 emisja.contentstream.pl
@@ -617,7 +615,7 @@
 0.0.0.0 2performant.com
 0.0.0.0 adamoads.com
 0.0.0.0 adsmeda.com
-||adsrvmedia.adk2.co^$important
+0.0.0.0 adsrvmedia.adk2.co^$important
 0.0.0.0 adtech.com
 0.0.0.0 affsnetwork.com
 0.0.0.0 alephd.com
@@ -678,7 +676,7 @@
 0.0.0.0 185.246.188.125
 0.0.0.0 185.246.188.124
 0.0.0.0 154.199.255.184
-||tn.porngo.xxx^$badfilter
+0.0.0.0 tn.porngo.xxx^$badfilter
 0.0.0.0 88.208.46.222
 0.0.0.0 kms-full.com
 0.0.0.0 kms-tool.com
@@ -687,12 +685,6 @@
 0.0.0.0 heukmsactivator.com
 0.0.0.0 getintopc.today
 0.0.0.0 103.224.182.210
-/^94\.242\.247\.(2[0-9]|3[0-2]):/
-/^94\.242\.247\.(2[0-9]|3[0-2])/
-/^23\.109\.170\.(18[7-9]|19[0-2])$/
-/^23\.109\.73\.\d{3}/
-/^188\.42\.84\.\d{1,3}/
-/^139\.45\.19[5-7]\.\d{1,3}/
 0.0.0.0 193.200.64.30
 0.0.0.0 193.200.64.31
 0.0.0.0 193.200.65.61
@@ -717,12 +709,11 @@
 0.0.0.0 194.63.140.103
 0.0.0.0 194.63.143.61
 0.0.0.0 194.63.143.96
-/^142\.91\.159\.(1[5-9]\d|2[0-4]\d|250):(80|443)$/
 0.0.0.0 188.72.219.36
 188.72.219.36^
 0.0.0.0 stripe.rs-1028-a.com
 0.0.0.0 hub.fghtem.com
-||d71e6dd31a026d45.com
+0.0.0.0 d71e6dd31a026d45.com
 0.0.0.0 samsungtvads.com
 0.0.0.0 1.xcfaprb0325.ru
 0.0.0.0 a.rb-ya.ru
@@ -5545,7 +5536,7 @@
 0.0.0.0 *two-gun-volley.pages.dev
 0.0.0.0 micro.rubiconproject.com
 0.0.0.0 promo.evvnt.com
-||id-msp.newsbreak.com
+0.0.0.0 id-msp.newsbreak.com
 0.0.0.0 msp.newsbreak.com
 0.0.0.0 29773.v.fwmrm.net
 0.0.0.0 813c5.v.fwmrm.net
@@ -5845,8 +5836,8 @@
 0.0.0.0 bn.gogo.mn
 0.0.0.0 widget.tippebannere.no
 0.0.0.0 adc.interia.pl
-||pl.ua^$badfilter
-||linksprf.com^$badfilter
+0.0.0.0 pl.ua^$badfilter
+0.0.0.0 linksprf.com^$badfilter
 0.0.0.0 c2c24.pl
 0.0.0.0 cdn.gallery
 0.0.0.0 llog.pl
@@ -5918,8 +5909,8 @@ vkcdnservice.appspot.com^
 0.0.0.0 tulip18.com
 0.0.0.0 webmine.cz
 0.0.0.0 wtm.monitoringservice.co
-||freecontent.date
-||freecontent.stream
+0.0.0.0 freecontent.date
+0.0.0.0 freecontent.stream
 0.0.0.0 s*.skencituer.com
 0.0.0.0 mine.torrent.pw
 0.0.0.0 0014b04291.com
@@ -21375,7 +21366,7 @@ vkcdnservice.appspot.com^
 0.0.0.0 gesticfuril.shop
 0.0.0.0 gesturasmirkly.qpon
 0.0.0.0 get-gx.net
-||get-me-wow.
+0.0.0.0 get-me-wow
 0.0.0.0 get-partner.life
 0.0.0.0 getadzuki.com
 0.0.0.0 getfluxfile.com
@@ -53177,12 +53168,9 @@ vkcdnservice.appspot.com^
 0.0.0.0 ads.samsung.com
 0.0.0.0 lgsmartad.com
 0.0.0.0 samsungacr.com
-/(https?:\/\/)213\.32\.115\..{100,}/
-/(https?:\/\/)217\.182\.11\..{100,}/
-/(https?:\/\/)51\.195\.31\..{100,}/
-||158.247.208.
-||23.109.82.
-||23.109.87.
+0.0.0.0 158.247.208
+0.0.0.0 23.109.82
+0.0.0.0 23.109.87
 |167.206.10.148^
 0.0.0.0 acs.woolworths.com.au
 0.0.0.0 ad.animehub.ac
@@ -53403,7 +53391,7 @@ vkcdnservice.appspot.com^
 0.0.0.0 afl.fulla.bet
 0.0.0.0 ah.pricegrabber.com
 0.0.0.0 alarmsportsnetwork.com
-||allsportsflix.
+0.0.0.0 allsportsflix
 0.0.0.0 api.140proof.com
 0.0.0.0 api.bitp.it
 0.0.0.0 assets.sheetmusicplus.com
@@ -55204,8 +55192,6 @@ vkcdnservice.appspot.com^
 0.0.0.0 criteo.net
 0.0.0.0 appodeal.com
 0.0.0.0 appbaqend.com
-/^https:\/\/(a|c)\.[0-9a-f]{56}\.com$/
-/^(a|c)\.[0-9a-f]{56}\.com$/
 0.0.0.0 rayjump.com
 0.0.0.0 sdkc.vervegroupinc.net
 0.0.0.0 aatkit.com
@@ -55304,8 +55290,8 @@ vkcdnservice.appspot.com^
 0.0.0.0 lgvlbd.icu
 0.0.0.0 crossadsapi.ecomobileapp.com
 0.0.0.0 service-ad-image-ga.prd.pluto.tv
-||pavoshare.com
-||global-staticplat.cdn.bcebos.com
+0.0.0.0 pavoshare.com
+0.0.0.0 global-staticplat.cdn.bcebos.com
 0.0.0.0 datk.bridgeoos.com
 0.0.0.0 ads.appbundledownload.com
 0.0.0.0 san.myadssupport.com
@@ -55447,14 +55433,14 @@ vkcdnservice.appspot.com^
 0.0.0.0 api-ad-adapter.wps.com
 0.0.0.0 jtbo*.nqxvevk.cn
 0.0.0.0 nasimobi.com
-||adx-*.dbankcloud.
+0.0.0.0 adx-*.dbankcloud
 0.0.0.0 ad-*.appacc.dbankedge.cn
 0.0.0.0 adx-*.dbankedge.cn
 0.0.0.0 adx-*.op.dbankcloud.com.edgekey.net
 0.0.0.0 thecatmachine.com
 0.0.0.0 blueduckredapple.com
 0.0.0.0 mobilefuse.com
-||api-ad-callback.mobiuspace.net
+0.0.0.0 api-ad-callback.mobiuspace.net
 0.0.0.0 gdl.i9dhjx.ru
 0.0.0.0 mobidriven.com
 0.0.0.0 liftoff-creatives.io
@@ -55612,7 +55598,7 @@ vkcdnservice.appspot.com^
 0.0.0.0 look.kfiopkln.com
 0.0.0.0 adplex.co.kr
 0.0.0.0 tveta.naver.net
-||deliveryengine.adswizz.com
+0.0.0.0 deliveryengine.adswizz.com
 0.0.0.0 adsapi.manhuaren.com
 0.0.0.0 euadsapi.manhuaren.com
 0.0.0.0 msg.ettoday.net
@@ -55684,7 +55670,7 @@ vkcdnservice.appspot.com^
 0.0.0.0 a.applvn.com
 0.0.0.0 adslot.uc.cn
 0.0.0.0 adtheorent.com
-||api.cloudmobi.net
+0.0.0.0 api.cloudmobi.net
 0.0.0.0 polymorphicads.jp
 0.0.0.0 cdns.lodeo.io
 0.0.0.0 ingamesads.gameloft.com
@@ -55706,7 +55692,7 @@ vkcdnservice.appspot.com^
 0.0.0.0 apptornado.com
 0.0.0.0 api.pingstart.com
 0.0.0.0 ad.cauly.co.kr
-||config.appjolt.com
+0.0.0.0 config.appjolt.com
 0.0.0.0 adflake.com
 0.0.0.0 ads.aitype.net
 0.0.0.0 ad-creatives-public.commondatastorage.googleapis.com
@@ -55942,8 +55928,8 @@ vkcdnservice.appspot.com^
 0.0.0.0 yandexadexchange.net
 0.0.0.0 yc-ads.s3.amazonaws.com
 0.0.0.0 youmi.net
-||deloton.com$important
-||oclasrv.com$important
+0.0.0.0 deloton.com$important
+0.0.0.0 oclasrv.com$important
 0.0.0.0 n152adserv.com
 0.0.0.0 smilered.com
 0.0.0.0 mon.snssdk.com
@@ -56657,7 +56643,7 @@ vkcdnservice.appspot.com^
 0.0.0.0 adrange.net
 0.0.0.0 dmtag.jp
 0.0.0.0 cdn.tercept.com
-||talpa-analytics.
+0.0.0.0 talpa-analytics
 0.0.0.0 dna8twue3dlxq.cloudfront.net
 0.0.0.0 public.profitwell.com
 0.0.0.0 cdn.userleap.com
@@ -57396,8 +57382,8 @@ vkcdnservice.appspot.com^
 0.0.0.0 track.customer.io
 0.0.0.0 lcs.loginfra.com
 0.0.0.0 aukana.jp
-||stat.tiara.
-||track.tiara.
+0.0.0.0 stat.tiara
+0.0.0.0 track.tiara
 0.0.0.0 telemetry.api.wmcdp.io
 0.0.0.0 logs.psm.wmcdp.io
 0.0.0.0 audiencemanager.de
@@ -57454,7 +57440,7 @@ vkcdnservice.appspot.com^
 0.0.0.0 tracker.durasite.net
 0.0.0.0 growthrx.in
 0.0.0.0 clickcease.com
-||logs.juspay.in
+0.0.0.0 logs.juspay.in
 0.0.0.0 http-intake.logs.datadoghq.com
 0.0.0.0 logs.browser-intake-datadoghq.eu
 0.0.0.0 zprk.io
@@ -57620,7 +57606,7 @@ vkcdnservice.appspot.com^
 0.0.0.0 deep.bi
 0.0.0.0 lists-tracking.komando.com
 0.0.0.0 logs.roku.com
-||tms-st.cdn.ngenix.net
+0.0.0.0 tms-st.cdn.ngenix.net
 0.0.0.0 track.aplaut.io
 0.0.0.0 stat.tildacdn.com
 0.0.0.0 cervell.io
@@ -57638,7 +57624,7 @@ vkcdnservice.appspot.com^
 0.0.0.0 ubiquitousyard.com
 0.0.0.0 i.compendium.com
 0.0.0.0 conductrics.com
-||zorosrv.com
+0.0.0.0 zorosrv.com
 0.0.0.0 api.cazamba.com
 0.0.0.0 maliva-mcs.byteoversea.com
 0.0.0.0 sgali-mcs.byteoversea.com
@@ -58442,7 +58428,7 @@ vkcdnservice.appspot.com^
 0.0.0.0 hit2map.com
 0.0.0.0 hitbox.com
 0.0.0.0 hitcount.dk
-||hitcounter.ru
+0.0.0.0 hitcounter.ru
 0.0.0.0 hitcounterstats.com
 0.0.0.0 hitgelsin.com
 0.0.0.0 hitgraph.jp
@@ -59028,7 +59014,7 @@ vkcdnservice.appspot.com^
 0.0.0.0 scaledb.com
 0.0.0.0 sciencerevenue.com
 0.0.0.0 scounter.rambler.ru
-||script.opentracker.net
+0.0.0.0 script.opentracker.net
 0.0.0.0 scriptil.com
 0.0.0.0 scripts21.com
 0.0.0.0 scriptshead.com
@@ -71499,7 +71485,7 @@ vkcdnservice.appspot.com^
 0.0.0.0 tc.europcar.es
 0.0.0.0 tc.europcar.pt
 0.0.0.0 tcdata.fnac.com
-||tccd.douglas.
+0.0.0.0 tccd.douglas
 0.0.0.0 ast.autobild.de
 0.0.0.0 ast.bild.de
 0.0.0.0 ast.computerbild.de
@@ -89735,7 +89721,7 @@ vkcdnservice.appspot.com^
 |load.sgtm.
 |load.ss.
 |load.sst.
-||thegreatesthits.
+0.0.0.0 thegreatesthits
 0.0.0.0 0.avmarket.rs
 0.0.0.0 123server.mr-fuss.com
 0.0.0.0 3tand.werkenbijneptunus.eu
@@ -101518,7 +101504,7 @@ vkcdnservice.appspot.com^
 0.0.0.0 a.apkeditor.io
 0.0.0.0 log.goodnovel.com
 0.0.0.0 d2qxmykuaro8s3.cloudfront.net
-||tracking.cds.dmm.
+0.0.0.0 tracking.cds.dmm
 0.0.0.0 metrics.media-amazon.com
 0.0.0.0 metis.truecaller.com
 0.0.0.0 tag.poomang.com
@@ -101583,7 +101569,7 @@ vkcdnservice.appspot.com^
 0.0.0.0 iot.skywayplatform.com
 0.0.0.0 rcu.skywayplatform.com
 0.0.0.0 tad.tygem.com
-||touch.yesim.
+0.0.0.0 touch.yesim
 0.0.0.0 uac.heraldcorp.com
 0.0.0.0 applytics.my1337jog.run
 0.0.0.0 data-track*.yingxiong.com
@@ -101836,7 +101822,7 @@ prd.api.bleacherreport.com^
 0.0.0.0 sgtm.stihl.ru
 0.0.0.0 sgtm.tripping.com
 0.0.0.0 sgtm.walbrook.ac.uk
-||sgtm.wimdu.
+0.0.0.0 sgtm.wimdu
 0.0.0.0 sst.altenpflege-online.net
 0.0.0.0 sst.mkb-brandstof.nl
 0.0.0.0 data.festool.pl
@@ -102096,7 +102082,7 @@ prd.api.bleacherreport.com^
 0.0.0.0 event-dot-procolor-backend.appspot.com
 0.0.0.0 prod.event.mwm-asset-manager.mwmwebapis.com
 0.0.0.0 api.amplitudeexperiment.com
-||analytics.ahrefs.
+0.0.0.0 analytics.ahrefs
 0.0.0.0 montelena.gmarket.co.kr
 0.0.0.0 stats.hitwebcloud.de
 0.0.0.0 amplitude.bandlab.com
@@ -102192,7 +102178,7 @@ prd.api.bleacherreport.com^
 0.0.0.0 sgtm.atg.se
 0.0.0.0 sgtm.blume2000.de
 0.0.0.0 sgtm.csas.cz
-||sgtm.fairmont.
+0.0.0.0 sgtm.fairmont
 0.0.0.0 sgtm.kaspersky.de
 0.0.0.0 sgtm.macrolibrarsi.it
 0.0.0.0 sgtm.milestonesys.com
@@ -102298,8 +102284,8 @@ prd.api.bleacherreport.com^
 0.0.0.0 doppler-beacon.cbsivideo.com
 0.0.0.0 lake.studydrive.net
 0.0.0.0 ce.x-opt.io
-||backstory.ebay.
-||edgetrksvc.ebay.
+0.0.0.0 backstory.ebay
+0.0.0.0 edgetrksvc.ebay
 0.0.0.0 analytics.global.sky.com
 0.0.0.0 analytics.cosmonova.net
 0.0.0.0 pn.ybp.yahoo.com
@@ -102344,7 +102330,7 @@ prd.api.bleacherreport.com^
 0.0.0.0 newsstat.dallasnews.com
 0.0.0.0 e.channelexco.com
 0.0.0.0 analytics.languagetoolplus.com
-||ubt.tracking.shopee.
+0.0.0.0 ubt.tracking.shopee
 0.0.0.0 log.classting.com
 0.0.0.0 hoxha.nieuwspaal.network
 0.0.0.0 tracker.gamemonkey.org
@@ -102370,7 +102356,7 @@ prd.api.bleacherreport.com^
 0.0.0.0 metrics.freemake.com
 0.0.0.0 analytics.freemake.com
 0.0.0.0 matomo.similarweb.io
-||taplytics-umami.grubhub.com
+0.0.0.0 taplytics-umami.grubhub.com
 0.0.0.0 s.wayfair.com
 0.0.0.0 imk.neweggimages.com
 0.0.0.0 grgnsht.nzxt.com
@@ -102550,7 +102536,7 @@ prd.api.bleacherreport.com^
 0.0.0.0 c.statcounter.com
 0.0.0.0 a.mts.ru
 0.0.0.0 ana*.inews24.com
-||analytics.streamfab.
+0.0.0.0 analytics.streamfab
 0.0.0.0 m.1gr.cz
 0.0.0.0 a.1gr.cz
 0.0.0.0 pvnwap.zol.com.cn
@@ -102589,7 +102575,7 @@ prd.api.bleacherreport.com^
 0.0.0.0 openrate.aweber.com
 0.0.0.0 tracker.iplocation.net
 0.0.0.0 e20d8e38992b.o3n.io
-||adservice.google.
+0.0.0.0 adservice.google
 0.0.0.0 weblog.kma.go.kr
 0.0.0.0 track.exame.com
 0.0.0.0 t.syosetu.org
@@ -102723,7 +102709,7 @@ prd.api.bleacherreport.com^
 0.0.0.0 storelog.kode.co.kr
 0.0.0.0 telemetry*.transcend.io
 0.0.0.0 ampltd2.medal.tv
-||stats.debatdirect.tweedekamer.nl
+0.0.0.0 stats.debatdirect.tweedekamer.nl
 0.0.0.0 analytics.dugun.com
 0.0.0.0 report2.iciba.com
 0.0.0.0 report.iciba.com
@@ -102747,7 +102733,7 @@ prd.api.bleacherreport.com^
 0.0.0.0 rec.banggood.com
 0.0.0.0 metrics.icloud.com
 0.0.0.0 units.knotch.it
-||sgtm.fashionunited.
+0.0.0.0 sgtm.fashionunited
 0.0.0.0 mercury.coupang.com
 0.0.0.0 client-telemetry.roblox.com
 0.0.0.0 tracing.roblox.com
@@ -102787,7 +102773,7 @@ prd.api.bleacherreport.com^
 0.0.0.0 stat.airdroid.com
 0.0.0.0 tracker.ranker.com
 0.0.0.0 c.salon24.pl
-||pixel.archive.
+0.0.0.0 pixel.archive
 0.0.0.0 cl.t3n.de
 0.0.0.0 d1n00d49gkbray.cloudfront.net
 0.0.0.0 in.unext.jp
@@ -102803,9 +102789,9 @@ prd.api.bleacherreport.com^
 0.0.0.0 mixpanel-proxy.ted.com
 0.0.0.0 zc.adswizz.com
 0.0.0.0 collect.nature.com
-||analytics-api.dvdfab.
-||servo-report.dvdfab.
-||collector.xhamster*.
+0.0.0.0 analytics-api.dvdfab
+0.0.0.0 servo-report.dvdfab
+0.0.0.0 collector.xhamster*
 0.0.0.0 anonym.data.funkedigital.de
 0.0.0.0 analytics.makeitmeme.com
 0.0.0.0 harvester.cms.markiza.sk
@@ -102833,7 +102819,7 @@ prd.api.bleacherreport.com^
 0.0.0.0 real-feedback.toros.daum.net
 0.0.0.0 pingback.giphy.com
 0.0.0.0 utsssl.auction.co.kr
-||uts.auction.co.kr
+0.0.0.0 uts.auction.co.kr
 0.0.0.0 montelena-rcv.auction.co.kr
 0.0.0.0 analytics.zoomit.ir
 0.0.0.0 prd-collector-platform.ex.co
@@ -102850,7 +102836,7 @@ prd.api.bleacherreport.com^
 0.0.0.0 sgtm.simoahava.com
 0.0.0.0 lists.ccmbg.com
 0.0.0.0 track-srv.vietnamnet.vn
-||stats.zone-telechargement.
+0.0.0.0 stats.zone-telechargement
 0.0.0.0 stats.tirexo.blue
 0.0.0.0 tracking.univtec.com
 0.0.0.0 counter.sberbank.ru
@@ -103168,10 +103154,10 @@ prd.api.bleacherreport.com^
 0.0.0.0 boomerang.dell.com
 0.0.0.0 broker.datazoom.io
 0.0.0.0 bt.mediaimpact.de
-||button.blogs.yandex.
+0.0.0.0 button.blogs.yandex
 0.0.0.0 bwb101.goo.ne.jp
 0.0.0.0 bzclk.baidu.com
-||c.bigmir.net
+0.0.0.0 c.bigmir.net
 0.0.0.0 c.hit.ua
 0.0.0.0 c.ipaddress.com
 0.0.0.0 c.msn.com
@@ -103215,19 +103201,19 @@ prd.api.bleacherreport.com^
 0.0.0.0 cmstrendslog.indiatimes.com
 0.0.0.0 cmstrendslog.timesnow.tv
 0.0.0.0 cnt.alawar.com
-||cnt.hd21.
+0.0.0.0 cnt.hd21
 0.0.0.0 cnt.logoslovo.ru
 0.0.0.0 cnt.nicemix.com
 0.0.0.0 cnt.nov.ru
-||cnt.nuvid.
-||cnt.proporn.
+0.0.0.0 cnt.nuvid
+0.0.0.0 cnt.proporn
 0.0.0.0 cnt.rambler.ru
 0.0.0.0 cnt.ramlife.ru
-||cnt.tubeon.
-||cnt.vivatube.
-||cnt.winporn.
+0.0.0.0 cnt.tubeon
+0.0.0.0 cnt.vivatube
+0.0.0.0 cnt.winporn
 0.0.0.0 cnt.xhamster.com
-||cnt.yeptube.
+0.0.0.0 cnt.yeptube
 0.0.0.0 codes.royalad.pl
 0.0.0.0 collect-elb-*.amazonaws.com
 0.0.0.0 collect.igodigital.com
@@ -103240,7 +103226,7 @@ prd.api.bleacherreport.com^
 0.0.0.0 collector.bunchbox.co
 0.0.0.0 collector.cdp.cnn.com
 0.0.0.0 collector.githubapp.com
-||collector.hamsterix.
+0.0.0.0 collector.hamsterix
 0.0.0.0 collector.ksax.com
 0.0.0.0 collector.kstptv5.com
 0.0.0.0 collector.leaddyno.com
@@ -103484,7 +103470,7 @@ prd.api.bleacherreport.com^
 0.0.0.0 gscounters.gigya.com
 0.0.0.0 gtm.beiersdorf.com
 0.0.0.0 gtm.udemy.com
-||gtmdev.jabra.
+0.0.0.0 gtmdev.jabra
 0.0.0.0 harvester.hbpl.co.uk
 0.0.0.0 harvester.hnonline.sk
 0.0.0.0 hc-analytics.idp.clogin.att.com
@@ -103519,7 +103505,7 @@ prd.api.bleacherreport.com^
 0.0.0.0 ibeat.indiatimes.com
 0.0.0.0 ichnaea-web.netflix.com
 0.0.0.0 ichnaea.netflix.com
-||img.opentracker.net
+0.0.0.0 img.opentracker.net
 0.0.0.0 imp.go.sohu.com
 0.0.0.0 improving.wuzhuiso.com
 0.0.0.0 in.cuebiq.com
@@ -103759,10 +103745,10 @@ prd.api.bleacherreport.com^
 0.0.0.0 pixel.trackverify.com
 0.0.0.0 pixel.watch
 0.0.0.0 pixel.wp.com
-||pixel.wp.pl^$important
+0.0.0.0 pixel.wp.pl^$important
 0.0.0.0 pixel.yabidos.com
 0.0.0.0 pixelappcollector.thesun.co.uk
-||pixel*.adswizz.com
+0.0.0.0 pixel*.adswizz.com
 0.0.0.0 pixels.ingbank.com.tr
 0.0.0.0 pixels.livingsocial.com
 0.0.0.0 pixelzirkus.gameforge.com
@@ -104131,7 +104117,7 @@ prd.api.bleacherreport.com^
 0.0.0.0 track.buybox.click
 0.0.0.0 track.catalogs.com
 0.0.0.0 track.cbs.com
-||track.datescan.info
+0.0.0.0 track.datescan.info
 0.0.0.0 track.dictionary.com
 0.0.0.0 track.easeus.com
 0.0.0.0 track.effiliation.com
@@ -104280,7 +104266,7 @@ prd.api.bleacherreport.com^
 0.0.0.0 videostats.kakao.com
 0.0.0.0 views.romaniatv.net
 0.0.0.0 vortex.hulu.com
-||wa.gmx.
+0.0.0.0 wa.gmx
 0.0.0.0 wa.mail.com
 0.0.0.0 wa.ui-portal.de
 0.0.0.0 wa.web.de
@@ -104644,7 +104630,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 appcpi.net
 0.0.0.0 event.aimailhome.io
 0.0.0.0 mon.capcutapi.us
-||mssdk.capcutapi.us
+0.0.0.0 mssdk.capcutapi.us
 0.0.0.0 mon16-normal-us-ttp.capcutapi.us
 0.0.0.0 log16-normal-us-ttp.capcutapi.us
 0.0.0.0 jdlog.uu.cc
@@ -104782,8 +104768,8 @@ dlsdk.appsflyer.com^
 0.0.0.0 stbid.ru
 0.0.0.0 stat.nsc-lab.io
 0.0.0.0 cnlogs.umengcloud.com
-||grs.dbankcloud.
-||logservice.dbankcloud.cn
+0.0.0.0 grs.dbankcloud
+0.0.0.0 logservice.dbankcloud.cn
 0.0.0.0 logs.nebulahoroscope.com
 0.0.0.0 braveglobal.tv
 0.0.0.0 mssdk-boot.cpacutapi.com
@@ -104802,7 +104788,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 t*.playdigo.live
 0.0.0.0 tnc*.tiktokv.us
 0.0.0.0 tnc*.tiktokv.com
-||log*-normal-*.tiktokv.com
+0.0.0.0 log*-normal-*.tiktokv.com
 0.0.0.0 aws.userlogsanalytics.com
 0.0.0.0 atb-stats-api.imolive.tv
 0.0.0.0 i.mxplayer.j2inter.com
@@ -104846,7 +104832,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 metrics-prod.suno.com
 -ulogl*.kwai-pro.com^
 0.0.0.0 ulog*.kwaipros.com
-||snowplow-collector.
+0.0.0.0 snowplow-collector
 0.0.0.0 logs-ingress.svc.vinted.com
 0.0.0.0 analytics.baliusuperapp.xyz
 0.0.0.0 analytics.hardlightgames.com
@@ -104859,7 +104845,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 track.tenjin.com
 0.0.0.0 tracker.mtrtb.com
 0.0.0.0 tracking.ws.eurosport.com
-||analysis.polarisoffice.com
+0.0.0.0 analysis.polarisoffice.com
 0.0.0.0 fraudmetrix.cn
 0.0.0.0 analysys.cn
 0.0.0.0 logs.supersonic.com
@@ -105201,8 +105187,8 @@ dlsdk.appsflyer.com^
 0.0.0.0 umengjmacs.m.taobao.com
 0.0.0.0 umengacs.m.taobao.com
 0.0.0.0 analytics-api.liveapp.com
-||log-collector.shopee.
-||seller-log-collector.shopee.
+0.0.0.0 log-collector.shopee
+0.0.0.0 seller-log-collector.shopee
 0.0.0.0 telemetry.voxeet.com
 0.0.0.0 api*.amplitude.com
 0.0.0.0 conversions.appsflyer.com
@@ -105392,8 +105378,6 @@ dlsdk.appsflyer.com^
 0.0.0.0 ws.ksmobile.net
 0.0.0.0 www-google-analytics.l.google.com
 0.0.0.0 ymtracking.com
-/^https:\/\/anon1.gt\d{6}.com/
-/^anon1.gt\d{6}.com$/
 -logsdk.kwai-pro.com^
 -ulog-*.kwai-pro.com^
 -ulog-*.kwaipros.com^
@@ -105607,7 +105591,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 b7tp47v2nb3x-a.akamaihd.net
 0.0.0.0 barium.cheezdev.com
 0.0.0.0 bat.bing.net
-||bc.geocities.
+0.0.0.0 bc.geocities
 0.0.0.0 beacon.affil.walmart.com
 0.0.0.0 beacon.aimtell.com
 0.0.0.0 beacon.cdnma.com
@@ -105789,7 +105773,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 eventlog.chatlead.com
 0.0.0.0 events-endpoint.pointandplace.com
 0.0.0.0 events-ocu.zipify.com
-||events-proxy.mintlify.com
+0.0.0.0 events-proxy.mintlify.com
 0.0.0.0 events.air.tv
 0.0.0.0 events.api.secureserver.net
 0.0.0.0 events.audiate.me
@@ -106235,7 +106219,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 tracker.smartframe.io
 0.0.0.0 tracker.ssl0d.com
 0.0.0.0 tracker.timesgroup.com
-||tracker.twenga.
+0.0.0.0 tracker.twenga
 0.0.0.0 tracker.wigzopush.com
 0.0.0.0 tracker.wpserveur.net
 0.0.0.0 trackerapi.truste.com
@@ -106371,11 +106355,11 @@ dlsdk.appsflyer.com^
 0.0.0.0 d20kffh39acpue.cloudfront.net
 0.0.0.0 d20vwa69zln1wj.cloudfront.net
 0.0.0.0 d21y75miwcfqoq.cloudfront.net
-||d241ujsiy3yht0.cloudfront.net
+0.0.0.0 d241ujsiy3yht0.cloudfront.net
 0.0.0.0 d24cze5sab2jwg.cloudfront.net
 0.0.0.0 d24luoisenoi7j.cloudfront.net
 0.0.0.0 d2cpw6kwpff7n5.cloudfront.net
-||d2fj3s7h83rb61.cloudfront.net
+0.0.0.0 d2fj3s7h83rb61.cloudfront.net
 0.0.0.0 d2gbtcuv3w9qyv.cloudfront.net
 0.0.0.0 d2i34c80a0ftze.cloudfront.net
 0.0.0.0 d2j1fszo1axgmp.cloudfront.net
@@ -109237,7 +109221,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 g-stats.openhost.es
 0.0.0.0 madrid.report.botm.transparentedge.io
 0.0.0.0 marker.konograma.com
-||mtm.qdqmedia.com
+0.0.0.0 mtm.qdqmedia.com
 0.0.0.0 pub.servidoresge.com
 0.0.0.0 rt.cdnmedia.tv
 0.0.0.0 segment.lalr.co
@@ -109459,7 +109443,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 fzgrpqktmq.com
 0.0.0.0 igbfwa.com
 0.0.0.0 ippstuet.com
-||vst.videolink.
+0.0.0.0 vst.videolink
 0.0.0.0 ippscriptbear.com
 0.0.0.0 builthuosefor.com
 0.0.0.0 gomtdata.com
@@ -109521,7 +109505,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 a.ava.com.ua
 0.0.0.0 add.in.ua
 0.0.0.0 adpro.com.ua
-||banner.kiev.ua
+0.0.0.0 banner.kiev.ua
 0.0.0.0 context.hotline.ua
 0.0.0.0 context.meta.ua
 0.0.0.0 kartinka.com.ua
@@ -109741,7 +109725,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 pwwghcyzsn.info
 0.0.0.0 memtkh.com
 0.0.0.0 gswtol.com
-||yxhstwzjbu.info
+0.0.0.0 yxhstwzjbu.info
 0.0.0.0 traffer.biz
 .potopy.ru^
 .vipko.ru^
@@ -109994,7 +109978,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 adlmerge.com
 0.0.0.0 adlook.net
 0.0.0.0 admilk.ru
-||admulti.
+0.0.0.0 admulti
 0.0.0.0 adne.info
 0.0.0.0 adnetpartner.com
 0.0.0.0 adnova.ru
@@ -110005,7 +109989,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 adregain.ru
 0.0.0.0 adriverm.narod2.ru
 0.0.0.0 adrock.ru
-||adserver1.
+0.0.0.0 adserver1
 0.0.0.0 adservone.com
 0.0.0.0 adsgid.com
 0.0.0.0 adsmmgp.com
@@ -110035,7 +110019,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 adwolf.ru
 0.0.0.0 adylalahb.ru
 0.0.0.0 aerontre.com
-||afdads.com
+0.0.0.0 afdads.com
 0.0.0.0 affiliate.astraweb.com
 0.0.0.0 affiliates.a2hosting.com
 0.0.0.0 agitazio.com
@@ -110047,10 +110031,10 @@ dlsdk.appsflyer.com^
 0.0.0.0 alfatarget.ru
 0.0.0.0 alishop*.ru
 0.0.0.0 allbn.net
-||allmt.com
+0.0.0.0 allmt.com
 0.0.0.0 allowac.com
 0.0.0.0 alltizer.ru
-||almosto.com
+0.0.0.0 almosto.com
 0.0.0.0 alpari.ru
 0.0.0.0 amazingcl.ru
 0.0.0.0 amzbr.com
@@ -110084,7 +110068,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 ban-host.ru
 0.0.0.0 ban.mirorgazma.ru
 0.0.0.0 banamertur.com
-||banner-in.net
+0.0.0.0 banner-in.net
 0.0.0.0 banner.lbs.km.ru
 0.0.0.0 bannerbook.ru
 0.0.0.0 bannernetwork.net
@@ -110117,7 +110101,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 bodaybo.net
 0.0.0.0 bodyclick.net
 0.0.0.0 bolshoykush.ru
-||bondzgi*.
+0.0.0.0 bondzgi*
 0.0.0.0 bongacash.com
 0.0.0.0 bongobono.com
 0.0.0.0 boobzi.com
@@ -110150,7 +110134,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 clickhere.ru
 0.0.0.0 clickov.com
 0.0.0.0 clickscapture.com
-||clickvip.ru
+0.0.0.0 clickvip.ru
 0.0.0.0 cmix.org
 0.0.0.0 cobrand.ria.com
 0.0.0.0 coinsup.com
@@ -110189,7 +110173,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 delightcash.com
 0.0.0.0 delta.mediafort.ru
 0.0.0.0 digital-forest.info
-||dl.qcash.ws
+0.0.0.0 dl.qcash.ws
 0.0.0.0 domertb.com
 0.0.0.0 doortrade.ru
 0.0.0.0 dosugcz.info
@@ -110198,7 +110182,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 drivenetwork.ru
 0.0.0.0 drtraff.ru
 0.0.0.0 e-partner.ru
-||eberalofe.pro
+0.0.0.0 eberalofe.pro
 0.0.0.0 econrus.ru
 0.0.0.0 edirect.efind.ru
 0.0.0.0 effad.ru
@@ -110211,7 +110195,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 eroksen.ru
 0.0.0.0 estiques.com
 0.0.0.0 et-cod.com
-||et-code.ru
+0.0.0.0 et-code.ru
 0.0.0.0 etarg.ru
 0.0.0.0 ettalhap.com
 0.0.0.0 eu.market-place.su
@@ -110229,7 +110213,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 firsttrack.ru
 0.0.0.0 fkehg.com
 0.0.0.0 flapoint.ru
-||flipflapflo.
+0.0.0.0 flipflapflo
 0.0.0.0 fogtrack.net
 0.0.0.0 foundtr.com
 0.0.0.0 freeavalanche.ru
@@ -110239,7 +110223,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 galaxymeet.ru
 0.0.0.0 gameteaser.ru
 0.0.0.0 gatewey.net
-||gbs.gamingmedia.ru
+0.0.0.0 gbs.gamingmedia.ru
 0.0.0.0 get-ads.ru
 0.0.0.0 get-click.ru
 0.0.0.0 get35.com
@@ -110255,7 +110239,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 glamurka.net
 0.0.0.0 globalstars.ru
 0.0.0.0 globalteaser.com
-||globalteaser.ru
+0.0.0.0 globalteaser.ru
 0.0.0.0 globaltizer.ru
 0.0.0.0 go.jetswap.com
 0.0.0.0 go.media-x.ru
@@ -110265,7 +110249,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 gomakemerich.com
 0.0.0.0 gomakemerich2.com
 0.0.0.0 gonews*.net
-||goodadvert.
+0.0.0.0 goodadvert
 0.0.0.0 goon.ru
 0.0.0.0 goossb.com
 0.0.0.0 gotraff.ru
@@ -110292,8 +110276,8 @@ dlsdk.appsflyer.com^
 0.0.0.0 iadvert.net
 0.0.0.0 ice-media.ru
 0.0.0.0 iclckk.com
-||icq-window.
-||icqwindow.
+0.0.0.0 icq-window
+0.0.0.0 icqwindow
 0.0.0.0 idvd.su
 0.0.0.0 idwrx.com
 0.0.0.0 iframepay.com
@@ -110302,7 +110286,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 imarker.ru
 0.0.0.0 img1458.r.worldssl.net
 0.0.0.0 img1461.r.worldssl.net
-||imgg.dt00.net
+0.0.0.0 imgg.dt00.net
 0.0.0.0 inetlog.ru
 0.0.0.0 inextlink.com
 0.0.0.0 inf.wqa.ru
@@ -110317,7 +110301,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 invest-pool.ru
 0.0.0.0 invest-system.net
 0.0.0.0 ipgold.ru
-||iphone-caviar.ru*entranceId
+0.0.0.0 iphone-caviar.ru*entranceId
 0.0.0.0 iqok.ru
 0.0.0.0 iredirr.com
 0.0.0.0 islamclick.ru
@@ -110330,7 +110314,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 ivoxua.socratos.net
 0.0.0.0 jofbu.com
 0.0.0.0 joycasino.com
-||js.goods.redtram.com
+0.0.0.0 js.goods.redtram.com
 0.0.0.0 jvs.price.ru
 0.0.0.0 kadam.net
 0.0.0.0 kalooga.com
@@ -110372,7 +110356,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 lenty.ru
 0.0.0.0 letimsnami.ru
 0.0.0.0 letitsoft.com
-||letssex.
+0.0.0.0 letssex
 0.0.0.0 levelpay.ru
 0.0.0.0 liex.ru
 0.0.0.0 lifemeet.biz
@@ -110381,7 +110365,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 lineoflife.ru
 0.0.0.0 lingospot.com
 0.0.0.0 link.ru
-||linkexchange.
+0.0.0.0 linkexchange
 0.0.0.0 linkfeed.ru
 0.0.0.0 linktraff.ru
 0.0.0.0 linkunder.ru
@@ -110393,7 +110377,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 livesurf.ru
 0.0.0.0 loadmoney.ru
 0.0.0.0 login.tracking101.com
-||loneday.com
+0.0.0.0 loneday.com
 0.0.0.0 lookszone.ru
 0.0.0.0 lordofads.com
 0.0.0.0 loveadvert.ru
@@ -110422,8 +110406,8 @@ dlsdk.appsflyer.com^
 0.0.0.0 mecash.ru
 0.0.0.0 media-active.ru
 0.0.0.0 media.kahoxa.ru
-||mediacontext.
-||medialand.
+0.0.0.0 mediacontext
+0.0.0.0 medialand
 0.0.0.0 medianaft.ru
 0.0.0.0 medianetworks.ru
 0.0.0.0 mediaportal.ru
@@ -110444,7 +110428,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 minidoc.ru
 0.0.0.0 minitds-*.info
 0.0.0.0 mixtraff.com
-||mjavagames.ru
+0.0.0.0 mjavagames.ru
 0.0.0.0 mmcispartners.com
 0.0.0.0 mobi-bobi.info
 0.0.0.0 mobi-mobi.info
@@ -110453,8 +110437,8 @@ dlsdk.appsflyer.com^
 0.0.0.0 modelatos.com
 0.0.0.0 moe.video
 0.0.0.0 moevideo.biz
-||moneymaiker.ru
-||moneysyst.biz
+0.0.0.0 moneymaiker.ru
+0.0.0.0 moneysyst.biz
 0.0.0.0 moneytrap.ru
 0.0.0.0 moogle.ru
 0.0.0.0 mp-b.info
@@ -110462,7 +110446,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 mpay1.info
 0.0.0.0 mpay69.biz
 0.0.0.0 mpay69.com
-||mptri.net
+0.0.0.0 mptri.net
 0.0.0.0 mrbasic.com
 0.0.0.0 multonly.ru
 0.0.0.0 mxcount.com
@@ -110497,7 +110481,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 nwmum.com
 0.0.0.0 nyyed.com
 0.0.0.0 obigre.ru
-||obislame.ru
+0.0.0.0 obislame.ru
 0.0.0.0 office.ad1.ru
 0.0.0.0 ognyvo.ru
 0.0.0.0 oiya.ru
@@ -110538,19 +110522,19 @@ dlsdk.appsflyer.com^
 0.0.0.0 pir.zspb.ru
 0.0.0.0 placeoff.ru
 0.0.0.0 planetapozitiva.ru
-||platinumcode.net
+0.0.0.0 platinumcode.net
 0.0.0.0 pluginsjquery.com
 0.0.0.0 pokitom.com
 0.0.0.0 pokrutim.ru
-||pop-parad.
-||pop-under.
+0.0.0.0 pop-parad
+0.0.0.0 pop-under
 0.0.0.0 popinads.com
-||poptraf.
-||popunder.
-||popupclick.
-||popuptraf.
+0.0.0.0 poptraf
+0.0.0.0 popunder
+0.0.0.0 popupclick
+0.0.0.0 popuptraf
 0.0.0.0 pornorunet.ru
-||poshalim.
+0.0.0.0 poshalim
 0.0.0.0 pozzitiv.ru
 0.0.0.0 prbn.ru
 0.0.0.0 primechoice.ru
@@ -110559,12 +110543,12 @@ dlsdk.appsflyer.com^
 0.0.0.0 promo.md
 0.0.0.0 promo.partner.alawar.ru
 0.0.0.0 promo.rzonline.ru
-||promoblocks.ru
+0.0.0.0 promoblocks.ru
 0.0.0.0 promoheads.com
 0.0.0.0 protovid.com
-||psma01.com
-||psma02.com
-||psma03.com
+0.0.0.0 psma01.com
+0.0.0.0 psma02.com
+0.0.0.0 psma03.com
 0.0.0.0 psmardr.com
 0.0.0.0 putana.cz
 0.0.0.0 pwnz.org
@@ -110596,7 +110580,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 realtraf.net
 0.0.0.0 reasulty.com
 0.0.0.0 rebevengwas.com
-||rebill.me
+0.0.0.0 rebill.me
 0.0.0.0 redclick.ru
 0.0.0.0 redexchange.net
 0.0.0.0 redflu.ru
@@ -110624,17 +110608,17 @@ dlsdk.appsflyer.com^
 0.0.0.0 rorer.ru
 0.0.0.0 rot.rusoul.ru
 0.0.0.0 rot.spotsniper.ru
-||rotaban.
-||rotabanner.
-||rotator.
+0.0.0.0 rotaban
+0.0.0.0 rotabanner
+0.0.0.0 rotator
 0.0.0.0 rsuuc.com
 0.0.0.0 rtb-media.ru
 0.0.0.0 rtb.com.ru
 0.0.0.0 rtbweb.com
-||ruscams.com
+0.0.0.0 ruscams.com
 0.0.0.0 ruscontext.com
 0.0.0.0 rushkolnik.ru
-||rusrestbest.
+0.0.0.0 rusrestbest
 0.0.0.0 rustrackers.ru
 0.0.0.0 ruttwind.com
 0.0.0.0 rutvind.com
@@ -110669,9 +110653,9 @@ dlsdk.appsflyer.com^
 0.0.0.0 skycdnhost.com
 0.0.0.0 skypromotion.ru
 0.0.0.0 slickjump.net
-||smart.allocine.fr
+0.0.0.0 smart.allocine.fr
 0.0.0.0 smigid.ru
-||sn00.net
+0.0.0.0 sn00.net
 0.0.0.0 socadvnet.com
 0.0.0.0 sochetat.net
 0.0.0.0 sopital.com
@@ -110689,13 +110673,13 @@ dlsdk.appsflyer.com^
 0.0.0.0 static.terrhq.ru
 0.0.0.0 stripvidz.com
 0.0.0.0 subnewss*.net
-||superpcexpert.ru
+0.0.0.0 superpcexpert.ru
 0.0.0.0 superstyle.ru
 0.0.0.0 supertop.ru
 0.0.0.0 supertura.com
 0.0.0.0 surfearner.com
 0.0.0.0 svk-native.ru
-||talkfusion.com
+0.0.0.0 talkfusion.com
 0.0.0.0 talysu.info
 0.0.0.0 td-everest.biz
 0.0.0.0 tds.vrcteam.ru
@@ -110716,9 +110700,9 @@ dlsdk.appsflyer.com^
 0.0.0.0 textun.ru
 0.0.0.0 tg.mybb.ru
 0.0.0.0 th700.com
-||timedirect.ru
+0.0.0.0 timedirect.ru
 0.0.0.0 titanpoker.com
-||tiz.neosmi.ru
+0.0.0.0 tiz.neosmi.ru
 0.0.0.0 tizer.passion.ru
 0.0.0.0 tizer.ukraine-ru.net
 0.0.0.0 tizer24.ru
@@ -110733,7 +110717,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 tizy.ru
 0.0.0.0 tle.ru
 0.0.0.0 tmozs.com
-||tmserver-2.net
+0.0.0.0 tmserver-2.net
 0.0.0.0 tmstrack.com
 0.0.0.0 tnd.ecefibwja.xyz
 0.0.0.0 todaymix.ru
@@ -110776,8 +110760,8 @@ dlsdk.appsflyer.com^
 0.0.0.0 ulogix.ru
 0.0.0.0 ultrapay.net
 0.0.0.0 umekana.ru
-||under-click.
-||underclick.
+0.0.0.0 under-click
+0.0.0.0 underclick
 0.0.0.0 underdone.ru
 0.0.0.0 undere.com
 0.0.0.0 untily.com
@@ -110810,8 +110794,8 @@ dlsdk.appsflyer.com^
 0.0.0.0 video.market-place.su
 0.0.0.0 video.videonow.ru
 0.0.0.0 videocap.org
-||videoclick.
-||videoclik.
+0.0.0.0 videoclick
+0.0.0.0 videoclik
 0.0.0.0 videofan.ru
 0.0.0.0 videoklass.ru
 0.0.0.0 videopotok.pro
@@ -110841,8 +110825,8 @@ dlsdk.appsflyer.com^
 0.0.0.0 vtdoska.ru
 0.0.0.0 vztfc.com
 0.0.0.0 w*statistics.info
-||web-rotation.net
-||web-visor.
+0.0.0.0 web-rotation.net
+0.0.0.0 web-visor
 0.0.0.0 webgringo.ru
 0.0.0.0 webmedia.co.il
 0.0.0.0 websharks.ru
@@ -110888,7 +110872,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 ybpxv.com
 0.0.0.0 ylkkp.com
 0.0.0.0 ynwia.com
-||yottos.com
+0.0.0.0 yottos.com
 0.0.0.0 yourlustmedia.com
 0.0.0.0 ytimgg.com
 0.0.0.0 yugaley.info
@@ -110900,8 +110884,6 @@ dlsdk.appsflyer.com^
 0.0.0.0 zoda.ru
 0.0.0.0 zorkabiz.ru
 0.0.0.0 zqmwf.xyz
-/62.76.25.2(7|8)/
-/193.200.64.24:/
 0.0.0.0 193.200.64.24
 0.0.0.0 206.54.181.250
 0.0.0.0 popvalk.com
@@ -110980,7 +110962,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 ads.livetvcdn.net
 0.0.0.0 adshow.sc2tv.ru
 0.0.0.0 afbanner.kinobomber3.online
-||an.yandex.
+0.0.0.0 an.yandex
 0.0.0.0 an.yandex.ru
 0.0.0.0 b.1istochnik.ru
 0.0.0.0 b.povarenok.ru
@@ -110989,7 +110971,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 banners.prikol.ru
 0.0.0.0 banshop.gruntovik.ru
 0.0.0.0 bet.championat.com
-||bet.championat.com^$important
+0.0.0.0 bet.championat.com^$important
 0.0.0.0 bn.take-profit.org
 0.0.0.0 c.grimuar.ru
 0.0.0.0 d1af165twk0zgn.cloudfront.net
@@ -111637,7 +111619,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 b10.justacdn.net
 0.0.0.0 wkzw.me
 0.0.0.0 dhkqqe.top
-||fjuga.top
+0.0.0.0 fjuga.top
 0.0.0.0 ouiokaq.top
 0.0.0.0 ig65.vip
 0.0.0.0 ig66.vip
@@ -111763,7 +111745,6 @@ dlsdk.appsflyer.com^
 0.0.0.0 itadapi.ithome.com.tw
 0.0.0.0 zjgfq.com
 0.0.0.0 207.148.44.179
-/^(mon|tue|wed|thu|fri|sat|sun)\d{1,2}\.\w{2}\d{1,6}\w{4}\.com$/
 0.0.0.0 s3-nl-01.mangabuddy.in
 0.0.0.0 wap.qqbiquge.net
 0.0.0.0 fc.3dmgame.com
@@ -112939,7 +112920,6 @@ dlsdk.appsflyer.com^
 -720x90-
 -728x90a.
 .1080.x.90.
-@@/\.(gif|jpe?g|png|webp)#(\/?.+)?(\/(ad)s?\/|\/ad-)/
 0.0.0.0 ads.gmbr.pro
 -bandarkiu.
 -tototix.gif
@@ -118540,13 +118520,13 @@ dlsdk.appsflyer.com^
 0.0.0.0 tupian888.*.bcebos.com
 0.0.0.0 vns86.oss-*.aliyuncs.com
 0.0.0.0 zhizhizhizhi.oss-*.aliyuncs.com
-||107.167.16.*.gif
-||107.167.22.*.gif
-||121.204.246.*.gif
-||38.33.15.*.gif
+0.0.0.0 107.167.16.*.gif
+0.0.0.0 107.167.22.*.gif
+0.0.0.0 121.204.246.*.gif
+0.0.0.0 38.33.15.*.gif
 0.0.0.0 hash.trafficmanager.net
 0.0.0.0 51tongji.trafficmanager.net
-||67.21.92.*.gif
+0.0.0.0 67.21.92.*.gif
 0.0.0.0 cnzz.trafficmanager.net
 0.0.0.0 6kpudsordv.com
 0.0.0.0 i3j6h7j9cj.com
@@ -122801,7 +122781,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 380.tw
 0.0.0.0 52av.be
 0.0.0.0 1024mzs.pw
-||1024wanzhai.
+0.0.0.0 1024wanzhai
 0.0.0.0 5lu8.com
 0.0.0.0 88p2p.com
 0.0.0.0 aiwanma99.com
@@ -122972,7 +122952,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 impservice*.yodao.com
 0.0.0.0 impservice*.youdao.com
 0.0.0.0 inte.sogou.com
-||itv.hexun.com
+0.0.0.0 itv.hexun.com
 0.0.0.0 ivy.pconline.com.cn
 0.0.0.0 iwanad.baidu.com
 0.0.0.0 ja*.gamersky.com
@@ -123016,7 +122996,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 same*.stockstar.com
 0.0.0.0 same.chinadaily.com.cn
 0.0.0.0 same.eastmoney.com
-||sax*.sina.
+0.0.0.0 sax*.sina
 0.0.0.0 sgg.southcn.com
 0.0.0.0 share.gzdsw.com
 0.0.0.0 smuc.cnnfootballclub.com
@@ -123062,17 +123042,6 @@ dlsdk.appsflyer.com^
 0.0.0.0 adasset.flixfiend.top
 0.0.0.0 ad.parkvv.com
 0.0.0.0 adasset.ethersaga.online
-@@||ad.10010.com^
-@@||ad.abchina.com^
-@@||ad.kazakinfo.com^
-@@||ad.ourgame.com^
-@@||adcdn.pingan.com^
-@@||advert.kf5.com^
-@@||api.ads.tvb.com^
-@@||app-advertise.zhihuishu.com^
-@@||buyad.bi-xenon.cn^
-@@||captcha.su.baidu.com^
-@@||img.ads.tvb.com^
 0.0.0.0 27gh.cc
 0.0.0.0 zgzxm.weathercn.com
 0.0.0.0 cientch.360doc.cn
@@ -123503,7 +123472,7 @@ dlsdk.appsflyer.com^
 0.0.0.0 fpb*.51edu.com
 0.0.0.0 fpb.sohu.com
 0.0.0.0 fpb1.apple886.com
-||fpb1.chinacar.
+0.0.0.0 fpb1.chinacar
 0.0.0.0 fpb1.jsq886.com
 0.0.0.0 fpb1.kedabai.com
 0.0.0.0 fpbone.ihowguide.com
@@ -124286,7 +124255,7 @@ analytics-*.aasaam.com
 0.0.0.0 ssp.meba.kr
 0.0.0.0 adapi.about.co.kr
 0.0.0.0 adx.turl.co.kr
-||adservice.google.co.*
+0.0.0.0 adservice.google.co.*
 0.0.0.0 tvetamovie.pstatic.net
 0.0.0.0 adv.imadrep.co.kr
 0.0.0.0 ads-*.v.ssp.yahoo.com
@@ -124414,7 +124383,7 @@ analytics-*.aasaam.com
 0.0.0.0 stbt.coupons.com
 0.0.0.0 stcollection.moneysupermarket.com
 0.0.0.0 t.blinkist.com
-||t.delfi.
+0.0.0.0 t.delfi
 0.0.0.0 t.vimeo.com
 0.0.0.0 tracer.perezhilton.com
 0.0.0.0 track.codepen.io
@@ -124422,7 +124391,7 @@ analytics-*.aasaam.com
 0.0.0.0 track.ft.com
 0.0.0.0 track.gawker.com
 0.0.0.0 track.workablemetro.com
-||track.zalando.
+0.0.0.0 track.zalando
 0.0.0.0 track.zomato.com
 0.0.0.0 tracker.cpapath.com
 0.0.0.0 tracker.lolalytics.com
@@ -124434,7 +124403,7 @@ analytics-*.aasaam.com
 0.0.0.0 tracking.goodgamestudios.com
 0.0.0.0 tracking.koego.com
 0.0.0.0 tracking.moneyam.com
-||tracking.olx.
+0.0.0.0 tracking.olx
 0.0.0.0 tracking.porndoelabs.com
 0.0.0.0 tracking.pornhd.com
 0.0.0.0 tracking.realtor.com
@@ -124470,185 +124439,3 @@ analytics-*.aasaam.com
 0.0.0.0 torvind.com
 0.0.0.0 a4.overclockers.ua
 0.0.0.0 novunu.football-plyus.net
-@@||data.orders.costco.com^|
-@@||link.meet5.net^|
-@@||link.nzz.ch^|
-@@||content.viralize.tv^|
-@@||www.datadoghq-browser-agent.com^|
-@@||itoya.ec-optimizer.com^|
-@@||go.redirectingat.com^|
-@@||ref.rbauction.com^|
-@@||puzzles-games-api.gp-prod.conde.digital^|
-@@||news.warhammer.com^|
-@@||prod.impartner.live^|
-@@||cdn.atmedia.hu^|
-@@||trk.ecomm.lenovo.com^|
-@@||s.bluecore.com^|
-@@|affiliate.notion.so^|
-@@|www3.doubleclick.net^|
-@@||acs-m.daraz.pk^|
-@@||taiga.maven.io^|
-@@||tlh.gedidigital.it^|
-@@||smtp.focusgroupresearch.com^|
-@@||ap01.records.in.treasuredata.com^|
-@@||click.avs.io^|
-@@||link.sylikes.com^|
-@@||rd.bizrate.com^|
-@@|www.daraz.pk^|
-@@|daraz.com^|
-@@||sbs.demdex.net^|
-@@||cl.link-ag.net^|
-@@||action.metaffiliation.com^|
-@@||www.dogpile.com^|
-@@||acs-m.daraz.com.bd^|
-@@||f-gear.ec-optimizer.com^|
-@@||get.neofinancial.com^|
-@@||hidive.com^|
-@@||learn.khanacademy.org^|
-@@||res.ads.nicovideo.jp^|
-@@||sax.sina.com.cn^|
-@@||linka.page^|
-@@||track.webgains.com^|
-@@||secureimage.securedataimages.com^|
-@@||infra-api.newrelic.com^|
-@@||tms.capitalone.com^|
-@@||redir.ownpage.fr^|
-@@||tr.rdrtr.com^|
-@@||media-consumer365.desigual.com^|
-@@||cdn.us*.exponea.com^|
-@@||crm-cdn.peek-cloppenburg.com^|
-@@||public-cis.exponea.com^|
-@@||cdn.rozetka.com.ua^|
-@@||vcentry2.valuecommerce.ne.jp^|
-@@||recommender.scarabresearch.com^|
-@@||refer.discover.com^|
-@@||cmp.inmobi.com^|
-@@||data.digital.costco.ca^|
-@@||data.digital.costco.com^|
-@@||api.karte.io^|
-@@||sponsor.nitropay.com^|
-@@||click.cptrack.de^|
-@@|ezodn.com^|
-@@||gate.first-id.fr^|
-@@||leechers-paradise.org^|
-@@||data-*.herz-fuer-tiere.de^|
-@@||go.adjust.com^|
-@@||clickattr.wayup.com^|
-@@||remembering.ca^|
-@@||obituaries.thestar.com^|
-@@||obituaries.therecord.com^|
-@@||catchup.thisisdax.com^|
-@@||px.a8.net^|
-@@||cdn.duurzaam.greenchoice.nl^|
-@@||c.office.com^|
-@@||surveymyopinion.researchnow.com^|
-@@||e.customeriomail.com^|
-@@||partner.everydays.de^|
-@@||api.docodoco.jp^|
-@@||js.monitor.azure.com^|
-@@||link.morningbrew.com^|
-@@||click.appcast.io^|
-@@||anwb.webpower.eu^|
-@@||bcicl.*.evergage.com^|
-@@||torimochi.line-apps.com^|
-@@|core.crazyegg.com^|
-@@|app.crazyegg.com^|
-@@||oa.tr.line.me^|
-@@||stash.roistat.com^|
-@@||static-v*.trbo.com^|
-@@||api-v*.trbo.com^|
-@@||brm-core-*.brsrvr.com^|
-@@||marketing.net.idealo-partner.com^|
-@@||netatmo.commander1.com^|
-@@||vcentry3.valuecommerce.ne.jp^|
-@@-ds.metric.gstatic.com^|
-@@||id.i2i.jp^|
-@@||thumbnail.thench.net^|
-@@||validate.perfdrive.com^|
-@@||ia.hit.interia.pl^|
-@@||analytics.amplitude.com^|
-@@|adsterra.com^|
-@@|ads.adsterra.com^|
-@@|publishers.adsterra.com^|
-@@|beta.publishers.adsterra.com^|
-@@|partners.adsterra.com^|
-@@|beta.partners.adsterra.com^|
-@@|affiliates.adsterra.com^|
-@@|beta.affiliates.adsterra.com^|
-@@|help-advertisers.adsterra.com^|
-@@||goto.target.com^|
-@@||goto.walmart.com^|
-@@||citiintl.122.2o7.net^|
-@@||ma135-r.analytics.edgekey.net^|
-@@||79423.analytics.edgekey.net^|
-@@||classliving.lpages.co^|
-@@||home.focusatwill.com^|
-@@||health.halodoc.com^|
-@@||promo.gramedia.com^|
-@@||support-beacon.nakanohito.jp^|
-@@||support-widget.nakanohito.jp^|
-@@||afi-b.com^|
-@@||daikoku.ebis.ne.jp^|
-@@||envato.market^|
-@@||ac.ebis.ne.jp^|
-@@||email.awscloud.com^|
-@@||oneline.nextday.media^|
-@@|ftp.bmp.ovh^|
-@@||cloud.notification-naviextras.com^|
-@@||email.elitedangerous.com^|
-@@||links.e.theatlantic.com^|
-@@||app.appsflyer.com^|
-@@||email.procook.co.uk^|
-@@||omsc.kpn.com^|
-@@||logentries.com^|
-@@||email.*.skyeng.ru^|
-@@||go.scorptec.com.au^|
-@@||links.getblueshift.com^|
-@@||click.trafficguard.ai^|
-@@||hb.afl.rakuten.co.jp^|
-@@||pt.afl.rakuten.co.jp^|
-@@||proto2ad.durasite.net^|
-@@||tags.crwdcntrl.net^|
-@@||official.paymaya.com^|
-@@|statcounter.com^|
-@@||www.statcounter.com^|
-@@||gs.statcounter.com^|
-@@||click.virt.s*.exacttarget.com^|
-@@||click.virt.exacttarget.com^|
-@@||mc.*.exacttarget.com^|
-@@||login.sendpulse.com^|
-@@||a.sellpoint.net^|
-@@||tlaol.com^|
-@@||admin.dable.io^|
-@@||log.mmstat.com^|
-@@||click.simba.taobao.com^|
-@@||cs.silverpop.com^|
-@@||grp07.ias.rakuten.co.jp^|
-@@||cindyholbrook.lpages.co^|
-@@||pagead.l.doubleclick.net^|
-@@||www.googleadservices.com^|
-@@||my.tealiumiq.com^|
-@@||artifactory.appodeal.com^|
-@@||www.jdoqocy.com^|
-@@||cj.dotomi.com^|
-@@||intersport.peerius.com^|
-@@||cutcaptcha.com^|
-@@||forum.notebookreview.com^|
-@@||radiofrance.targetspot.com^|
-@@||awin1.com^|
-@@||app.adjust.com^|
-@@||feed.adrelayer.com^|
-@@||redirect.appmetrica.yandex.com^|
-@@||guce.advertising.com^|
-@@||a.adwolf.ru^|
-@@||cm-beacon.nakanohito.jp^|
-@@||cm-widget.nakanohito.jp^|
-@@||ads.tdbank.com^|
-@@||nineto5mac-d.openx.net^|
-@@||redir.tradedoubler.com^|
-@@||clk*.tradedoubler.com^|
-@@||href.li^|
-@@||str.hit.gemius.pl^|
-@@||track.rutarget.ru^|
-@@||5471782.fls.doubleclick.net^|
-@@||omniture.walmart.com^|
