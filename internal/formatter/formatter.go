@@ -5,14 +5,18 @@ import (
 )
 
 func ConvertToHosts(content string) (string, error) {
-	return convert(content, true, false)
+	return convert(content, true, false, "hosts")
 }
 
 func ConvertToDNSmasq(content string) (string, error) {
-	return convert(content, false, true)
+	return convert(content, false, true, "dnsmasq")
 }
 
-func convert(content string, stripRegex bool, keepWildcard bool) (string, error) {
+func ConvertToRFC1035(content string) (string, error) {
+	return convert(content, true, false, "rfc1035")
+}
+
+func convert(content string, stripRegex bool, keepWildcard bool, format string) (string, error) {
 	lines := strings.Split(content, "\n")
 	var result []string
 
@@ -98,9 +102,15 @@ func convert(content string, stripRegex bool, keepWildcard bool) (string, error)
 			}
 			
 			if domain != "" && !strings.HasPrefix(domain, "/") {
-				if keepWildcard {
+				switch format {
+				case "dnsmasq":
 					result = append(result, "address=/"+domain+"/0.0.0.0")
-				} else {
+				case "rfc1035":
+					if !strings.HasSuffix(domain, ".") {
+						domain = domain + "."
+					}
+					result = append(result, domain+"\tIN\tA\t0.0.0.0")
+				default:
 					result = append(result, "0.0.0.0 "+domain)
 				}
 				continue

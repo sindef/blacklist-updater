@@ -5,9 +5,9 @@ sources:
     filename: stevenblack.txt
   - url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt
     filename: adguard.txt
-    output_format: dnsmasq
+    output_format: rfc1035
 
-output_dir: ./data
+output_dir: ./testdata
 interval_seconds: 30
 
 http_client:
