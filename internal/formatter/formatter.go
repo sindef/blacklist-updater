@@ -138,10 +138,13 @@ func isValidDomain(domain string) bool {
 	parts := strings.Split(domain, ".")
 	hasValidLabel := false
 	for _, part := range parts {
-		if part != "" {
-			hasValidLabel = true
-			break
+		if part == "" {
+			return false
 		}
+		if strings.HasPrefix(part, "-") || strings.HasSuffix(part, "-") {
+			return false
+		}
+		hasValidLabel = true
 	}
 	
 	return hasValidLabel
