@@ -39,7 +39,15 @@ func convert(content string, stripRegex bool, keepWildcard bool, format string, 
 		}
 
 		if strings.HasPrefix(line, "#") || strings.HasPrefix(line, "!") {
-			result = append(result, originalLine)
+			if format == "rfc1035" {
+				if strings.HasPrefix(line, "!") {
+					result = append(result, strings.Replace(originalLine, "!", ";", 1))
+				} else {
+					result = append(result, strings.Replace(originalLine, "#", ";", 1))
+				}
+			} else {
+				result = append(result, originalLine)
+			}
 			continue
 		}
 
