@@ -9,10 +9,12 @@ import (
 
 	"dnsblacklist/internal/config"
 	"dnsblacklist/internal/fetcher"
+	"dnsblacklist/internal/logger"
 )
 
 func main() {
 	configPath := flag.String("config", "config.yaml", "Path to configuration file")
+	debug := flag.Bool("debug", false, "Enable debug logging")
 	flag.Parse()
 
 	if *configPath == "" {
@@ -20,14 +22,27 @@ func main() {
 		flag.Usage()
 		os.Exit(1)
 	}
+
+	log := logger.New(*debug)
+
 	cfg, err := config.Load(*configPath)
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error loading config: %v\n", err)
+		log.Error("Error loading config: %v", err)
 		os.Exit(1)
 	}
 
+	log.Info("Starting dnsblacklist at %s", log.Timestamp())
+	log.Info("Configuration:")
+	log.Info("  Output directory: %s", cfg.OutputDir)
+	log.Info("  Update interval: %d seconds", cfg.Interval)
+	log.Info("  HTTP timeout: %d seconds", cfg.HTTPClient.Timeout)
+	log.Info("  Sources: %d", len(cfg.Sources))
+	for i, source := range cfg.Sources {
+		log.Info("    [%d] %s -> %s", i+1, source.URL, source.Filename)
+	}
+
 	if err := os.MkdirAll(cfg.OutputDir, 0755); err != nil {
-		fmt.Fprintf(os.Stderr, "Error creating output directory: %v\n", err)
+		log.Error("Error creating output directory: %v", err)
 		os.Exit(1)
 	}
 
@@ -35,21 +50,23 @@ func main() {
 		Timeout: time.Duration(cfg.HTTPClient.Timeout) * time.Second,
 	}
 
-	f := fetcher.New(client, cfg.OutputDir)
+	f := fetcher.New(client, cfg.OutputDir, log)
 
 	if err := f.FetchAll(cfg.Sources); err != nil {
-		fmt.Fprintf(os.Stderr, "Error fetching sources: %v\n", err)
+		log.Error("Error fetching sources: %v", err)
 		os.Exit(1)
 	}
 
 	if cfg.Interval > 0 {
+		log.Info("Monitoring enabled, next update at %s", time.Now().Add(time.Duration(cfg.Interval)*time.Second).Format(time.RFC3339))
 		ticker := time.NewTicker(time.Duration(cfg.Interval) * time.Second)
 		defer ticker.Stop()
 
 		for range ticker.C {
 			if err := f.FetchAll(cfg.Sources); err != nil {
-				fmt.Fprintf(os.Stderr, "Error fetching sources: %v\n", err)
+				log.Error("Error fetching sources: %v", err)
 			}
+			log.Info("Next update scheduled for %s", time.Now().Add(time.Duration(cfg.Interval)*time.Second).Format(time.RFC3339))
 		}
 	}
 }
