@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"net/http"
 	"os"
@@ -11,13 +12,15 @@ import (
 )
 
 func main() {
-	if len(os.Args) < 2 {
-		fmt.Fprintf(os.Stderr, "Usage: %s <config.yaml>\n", os.Args[0])
+	configPath := flag.String("config", "config.yaml", "Path to configuration file")
+	flag.Parse()
+
+	if *configPath == "" {
+		fmt.Fprintf(os.Stderr, "Error: config file path is required\n")
+		flag.Usage()
 		os.Exit(1)
 	}
-
-	configPath := os.Args[1]
-	cfg, err := config.Load(configPath)
+	cfg, err := config.Load(*configPath)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error loading config: %v\n", err)
 		os.Exit(1)

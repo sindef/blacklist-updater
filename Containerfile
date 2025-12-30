@@ -20,4 +20,4 @@ COPY config.yaml /app/config.yaml
 VOLUME ["/data"]
 
 ENTRYPOINT ["/app/dnsblacklist"]
-CMD ["/app/config.yaml"]
+CMD ["-config", "/app/config.yaml"]

@@ -7,7 +7,7 @@ sources:
     filename: adguard.txt
 
 output_dir: ./data
-interval_seconds: 3600
+interval_seconds: 30
 
 http_client:
   timeout_seconds: 30
