@@ -75,6 +75,7 @@ func (f *Fetcher) Fetch(source config.Source) error {
 	f.log.Debug("HTTP response: status=%d, content-length=%d, etag=%s", resp.StatusCode, resp.ContentLength, resp.Header.Get("ETag"))
 
 	if resp.StatusCode == http.StatusNotModified {
+		f.log.Info("No changes for %s (not modified)", source.Filename)
 		f.log.Debug("Source %s not modified (304)", source.URL)
 		return nil
 	}
@@ -103,6 +104,7 @@ func (f *Fetcher) Fetch(source config.Source) error {
 	f.log.Debug("Content hash: %s", hash)
 
 	if state != nil && state.LastHash == hash {
+		f.log.Info("No changes for %s (content unchanged)", source.Filename)
 		f.log.Debug("Content unchanged for %s (hash match)", source.URL)
 		return nil
 	}

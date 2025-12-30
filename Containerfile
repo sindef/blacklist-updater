@@ -17,7 +17,7 @@ WORKDIR /app
 COPY --from=builder /build/dnsblacklist /app/dnsblacklist
 COPY config.yaml /app/config.yaml
 
-VOLUME ["/data"]
+VOLUME ["/app/data"]
 
 ENTRYPOINT ["/app/dnsblacklist"]
 CMD ["-config", "/app/config.yaml"]
