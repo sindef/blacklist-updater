@@ -112,6 +112,15 @@ func (f *Fetcher) Fetch(source config.Source) error {
 		}
 		finalContent = converted
 		f.log.Debug("Format conversion completed")
+	} else if source.OutputFormat == "dnsmasq" {
+		f.log.Debug("Converting content to dnsmasq format")
+		converted, err := formatter.ConvertToDNSmasq(content)
+		if err != nil {
+			f.log.Debug("Format conversion failed: %v", err)
+			return fmt.Errorf("format conversion failed: %w", err)
+		}
+		finalContent = converted
+		f.log.Debug("Format conversion completed")
 	}
 
 	hash := calculateHash(finalContent)

@@ -5,6 +5,14 @@ import (
 )
 
 func ConvertToHosts(content string) (string, error) {
+	return convert(content, true, false)
+}
+
+func ConvertToDNSmasq(content string) (string, error) {
+	return convert(content, false, true)
+}
+
+func convert(content string, stripRegex bool, keepWildcard bool) (string, error) {
 	lines := strings.Split(content, "\n")
 	var result []string
 
@@ -30,6 +38,10 @@ func ConvertToHosts(content string) (string, error) {
 			continue
 		}
 
+		if stripRegex && (strings.HasPrefix(line, "/") && strings.HasSuffix(line, "/")) {
+			continue
+		}
+
 		var domain string
 		if strings.HasPrefix(line, "||") {
 			domain = strings.TrimPrefix(line, "||")
@@ -42,7 +54,11 @@ func ConvertToHosts(content string) (string, error) {
 		} else if strings.HasPrefix(line, "^") {
 			domain = strings.TrimPrefix(line, "^")
 		} else if strings.HasPrefix(line, "*") {
-			domain = strings.TrimPrefix(line, "*")
+			if keepWildcard {
+				domain = line
+			} else {
+				domain = strings.TrimPrefix(line, "*")
+			}
 		} else {
 			domain = line
 		}
@@ -74,13 +90,24 @@ func ConvertToHosts(content string) (string, error) {
 				domain = domain[:idx]
 			}
 			
+			if !keepWildcard && strings.Contains(domain, "*") {
+				domain = strings.ReplaceAll(domain, "*", "")
+				if !isValidDomain(domain) {
+					continue
+				}
+			}
+			
 			if domain != "" && !strings.HasPrefix(domain, "/") {
-				result = append(result, "0.0.0.0 "+domain)
+				if keepWildcard {
+					result = append(result, "address=/"+domain+"/0.0.0.0")
+				} else {
+					result = append(result, "0.0.0.0 "+domain)
+				}
 				continue
 			}
 		}
 
-		if strings.HasPrefix(line, "/") && strings.HasSuffix(line, "/") {
+		if !stripRegex && strings.HasPrefix(line, "/") && strings.HasSuffix(line, "/") {
 			continue
 		}
 
@@ -88,4 +115,34 @@ func ConvertToHosts(content string) (string, error) {
 	}
 
 	return strings.Join(result, "\n"), nil
+}
+
+func isValidDomain(domain string) bool {
+	if domain == "" {
+		return false
+	}
+	
+	domain = strings.TrimSpace(domain)
+	if domain == "" {
+		return false
+	}
+	
+	if strings.HasPrefix(domain, ".") || strings.HasSuffix(domain, ".") {
+		return false
+	}
+	
+	if strings.Contains(domain, "..") {
+		return false
+	}
+	
+	parts := strings.Split(domain, ".")
+	hasValidLabel := false
+	for _, part := range parts {
+		if part != "" {
+			hasValidLabel = true
+			break
+		}
+	}
+	
+	return hasValidLabel
 }
