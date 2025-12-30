@@ -2,6 +2,7 @@ package validator
 
 import (
 	"fmt"
+	"net"
 	"strings"
 )
 
@@ -23,6 +24,11 @@ func ValidateHostsFile(content string) bool {
 			continue
 		}
 
+		if isValidAdGuardRule(line) {
+			hasValidEntry = true
+			continue
+		}
+
 		parts := strings.Fields(line)
 		if len(parts) < 2 {
 			continue
@@ -39,12 +45,21 @@ func ValidateHostsFile(content string) bool {
 	return hasValidEntry
 }
 
+func isValidAdGuardRule(line string) bool {
+	return strings.HasPrefix(line, "||") && strings.HasSuffix(line, "^")
+}
+
 func isValidIP(ip string) bool {
+	if idx := strings.Index(ip, "%"); idx != -1 {
+		ip = ip[:idx]
+	}
+
+	if net.ParseIP(ip) != nil {
+		return true
+	}
+
 	parts := strings.Split(ip, ".")
 	if len(parts) != 4 {
-		if ip == "::1" || ip == "::" || strings.HasPrefix(ip, "::") {
-			return true
-		}
 		return false
 	}
 
