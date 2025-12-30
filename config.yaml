@@ -1,0 +1,13 @@
+sources:
+  - url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_2.txt
+    filename: adaway.txt
+  - url: https://raw.githubusercontent.com/StevenBlack/hosts/refs/heads/master/hosts
+    filename: stevenblack.txt
+  - url: https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt
+    filename: adguard.txt
+
+output_dir: /data
+interval_seconds: 3600
+
+http_client:
+  timeout_seconds: 30
