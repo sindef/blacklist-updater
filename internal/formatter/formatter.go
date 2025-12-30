@@ -26,9 +26,16 @@ func ConvertToHosts(content string) (string, error) {
 			continue
 		}
 
+		var domain string
 		if strings.HasPrefix(line, "||") {
-			domain := strings.TrimPrefix(line, "||")
-			
+			domain = strings.TrimPrefix(line, "||")
+		} else if strings.HasPrefix(line, "|") {
+			domain = strings.TrimPrefix(line, "|")
+		} else if strings.HasPrefix(line, ".") {
+			domain = strings.TrimPrefix(line, ".")
+		}
+
+		if domain != "" {
 			if strings.HasSuffix(domain, "^") {
 				domain = strings.TrimSuffix(domain, "^")
 			} else if strings.HasSuffix(domain, ".") {
@@ -37,8 +44,8 @@ func ConvertToHosts(content string) (string, error) {
 			
 			if domain != "" {
 				result = append(result, "0.0.0.0 "+domain)
+				continue
 			}
-			continue
 		}
 
 		if strings.HasPrefix(line, "/") && strings.HasSuffix(line, "/") {
