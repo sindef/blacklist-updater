@@ -26,6 +26,10 @@ func ConvertToHosts(content string) (string, error) {
 			continue
 		}
 
+		if strings.HasPrefix(line, "-") {
+			continue
+		}
+
 		var domain string
 		if strings.HasPrefix(line, "||") {
 			domain = strings.TrimPrefix(line, "||")
@@ -33,16 +37,44 @@ func ConvertToHosts(content string) (string, error) {
 			domain = strings.TrimPrefix(line, "|")
 		} else if strings.HasPrefix(line, ".") {
 			domain = strings.TrimPrefix(line, ".")
+		} else if strings.HasPrefix(line, "://") {
+			domain = strings.TrimPrefix(line, "://")
+		} else if strings.HasPrefix(line, "^") {
+			domain = strings.TrimPrefix(line, "^")
+		} else if strings.HasPrefix(line, "*") {
+			domain = strings.TrimPrefix(line, "*")
+		} else {
+			domain = line
 		}
 
 		if domain != "" {
-			if strings.HasSuffix(domain, "^") {
-				domain = strings.TrimSuffix(domain, "^")
-			} else if strings.HasSuffix(domain, ".") {
-				domain = strings.TrimSuffix(domain, ".")
+			domain = strings.TrimSuffix(domain, "^|")
+			domain = strings.TrimSuffix(domain, "^")
+			domain = strings.TrimSuffix(domain, "|")
+			domain = strings.TrimSuffix(domain, ".")
+			
+			if strings.Contains(domain, "://") {
+				parts := strings.Split(domain, "://")
+				if len(parts) > 1 {
+					urlPart := parts[1]
+					if idx := strings.Index(urlPart, "/"); idx != -1 {
+						domain = urlPart[:idx]
+					} else if idx := strings.Index(urlPart, "^"); idx != -1 {
+						domain = urlPart[:idx]
+					} else {
+						domain = urlPart
+					}
+				}
 			}
 			
-			if domain != "" {
+			if idx := strings.Index(domain, "/"); idx != -1 {
+				domain = domain[:idx]
+			}
+			if idx := strings.Index(domain, "^"); idx != -1 {
+				domain = domain[:idx]
+			}
+			
+			if domain != "" && !strings.HasPrefix(domain, "/") {
 				result = append(result, "0.0.0.0 "+domain)
 				continue
 			}
