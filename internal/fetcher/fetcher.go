@@ -11,6 +11,7 @@ import (
 	"time"
 
 	"blacklistupdater/internal/config"
+	"blacklistupdater/internal/formatter"
 	"blacklistupdater/internal/logger"
 	"blacklistupdater/internal/validator"
 )
@@ -100,7 +101,20 @@ func (f *Fetcher) Fetch(source config.Source) error {
 	}
 
 	f.log.Debug("Content validation passed")
-	hash := calculateHash(content)
+
+	finalContent := content
+	if source.OutputFormat == "hosts" {
+		f.log.Debug("Converting content to hosts format")
+		converted, err := formatter.ConvertToHosts(content)
+		if err != nil {
+			f.log.Debug("Format conversion failed: %v", err)
+			return fmt.Errorf("format conversion failed: %w", err)
+		}
+		finalContent = converted
+		f.log.Debug("Format conversion completed")
+	}
+
+	hash := calculateHash(finalContent)
 	f.log.Debug("Content hash: %s", hash)
 
 	if state != nil && state.LastHash == hash {
@@ -110,7 +124,7 @@ func (f *Fetcher) Fetch(source config.Source) error {
 	}
 
 	outputPath := filepath.Join(f.outputDir, source.Filename)
-	if err := os.WriteFile(outputPath, body, 0644); err != nil {
+	if err := os.WriteFile(outputPath, []byte(finalContent), 0644); err != nil {
 		f.log.Debug("Failed to write file: %v", err)
 		return err
 	}

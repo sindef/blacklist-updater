@@ -16,8 +16,9 @@ type Config struct {
 }
 
 type Source struct {
-	URL      string `yaml:"url"`
-	Filename string `yaml:"filename"`
+	URL         string `yaml:"url"`
+	Filename    string `yaml:"filename"`
+	OutputFormat string `yaml:"output_format,omitempty"`
 }
 
 func Load(path string) (*Config, error) {
