@@ -131,7 +131,7 @@ func (f *Fetcher) Fetch(source config.Source) error {
 		f.log.Debug("Format conversion completed")
 	} else if source.OutputFormat == "rfc1035" {
 		f.log.Debug("Converting content to RFC 1035 format")
-		converted, err := formatter.ConvertToRFC1035(content, f.whitelist)
+		converted, err := formatter.ConvertToRFC1035(content, f.whitelist, source.Wildcards)
 		if err != nil {
 			f.log.Debug("Format conversion failed: %v", err)
 			return fmt.Errorf("format conversion failed: %w", err)

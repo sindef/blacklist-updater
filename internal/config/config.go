@@ -20,6 +20,7 @@ type Source struct {
 	URL         string `yaml:"url"`
 	Filename    string `yaml:"filename"`
 	OutputFormat string `yaml:"output_format,omitempty"`
+	Wildcards    bool   `yaml:"wildcards,omitempty"`
 }
 
 func Load(path string) (*Config, error) {

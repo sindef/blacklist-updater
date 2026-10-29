@@ -15,12 +15,23 @@ func ConvertToDNSmasq(content string, whitelist []string) (string, error) {
 	return convert(content, false, true, "dnsmasq", whitelist)
 }
 
-func ConvertToRFC1035(content string, whitelist []string) (string, error) {
+func ConvertToRFC1035(content string, whitelist []string, wildcards bool) (string, error) {
 	result, err := convert(content, true, false, "rfc1035", whitelist)
 	if err != nil {
 		return "", err
 	}
-	
+
+	if wildcards {
+		var lines []string
+		for _, line := range strings.Split(result, "\n") {
+			lines = append(lines, line)
+			if strings.HasSuffix(line, "\tIN\tA\t0.0.0.0") && !strings.HasPrefix(line, "*.") {
+				lines = append(lines, "*."+line)
+			}
+		}
+		result = strings.Join(lines, "\n")
+	}
+
 	soaRecord := fmt.Sprintf("@\tIN\tSOA\tlocalhost. root.localhost. (\n\t\t%d\t; serial\n\t\t3600\t\t; refresh\n\t\t1800\t\t; retry\n\t\t604800\t\t; expire\n\t\t86400\t\t; minimum TTL\n)\n", time.Now().Unix())
 	
 	return soaRecord + result, nil
