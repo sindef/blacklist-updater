@@ -32,20 +32,21 @@ func ConvertToRFC1035(content string, whitelist []string, wildcards bool) (strin
 		result = strings.Join(lines, "\n")
 	}
 
-	soaRecord := fmt.Sprintf("@\tIN\tSOA\tlocalhost. root.localhost. (\n\t\t%d\t; serial\n\t\t3600\t\t; refresh\n\t\t1800\t\t; retry\n\t\t604800\t\t; expire\n\t\t86400\t\t; minimum TTL\n)\n", time.Now().Unix())
-	
-	return soaRecord + result, nil
+	return result, nil
 }
 
 func ConvertToRPZ(content string, whitelist []string) (string, error) {
-	result, err := convert(content, true, false, "rpz", whitelist)
-	if err != nil {
-		return "", err
+	return convert(content, true, false, "rpz", whitelist)
+}
+
+func Header(format string) string {
+	switch format {
+	case "rfc1035":
+		return fmt.Sprintf("@\tIN\tSOA\tlocalhost. root.localhost. (\n\t\t%d\t; serial\n\t\t3600\t\t; refresh\n\t\t1800\t\t; retry\n\t\t604800\t\t; expire\n\t\t86400\t\t; minimum TTL\n)\n", time.Now().Unix())
+	case "rpz":
+		return "$TTL 300\n@\tIN\tSOA\tlocalhost. root.localhost. 1 3600 1800 604800 300\n@\tIN\tNS\tlocalhost.\n"
 	}
-
-	header := "$TTL 300\n@\tIN\tSOA\tlocalhost. root.localhost. 1 3600 1800 604800 300\n@\tIN\tNS\tlocalhost.\n"
-
-	return header + result, nil
+	return ""
 }
 
 func convert(content string, stripRegex bool, keepWildcard bool, format string, whitelist []string) (string, error) {
