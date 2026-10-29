@@ -30,6 +30,10 @@ func ValidateHostsFile(content string) bool {
 		}
 
 		parts := strings.Fields(line)
+		if len(parts) == 1 && strings.Contains(parts[0], ".") {
+			hasValidEntry = true
+			continue
+		}
 		if len(parts) < 2 {
 			continue
 		}
