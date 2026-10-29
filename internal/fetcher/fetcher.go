@@ -150,8 +150,13 @@ func (f *Fetcher) Fetch(source config.Source) error {
 	}
 
 	outputPath := filepath.Join(f.outputDir, source.Filename)
-	if err := os.WriteFile(outputPath, []byte(finalContent), 0644); err != nil {
+	tmpPath := outputPath + ".tmp"
+	if err := os.WriteFile(tmpPath, []byte(finalContent), 0644); err != nil {
 		f.log.Debug("Failed to write file: %v", err)
+		return err
+	}
+	if err := os.Rename(tmpPath, outputPath); err != nil {
+		f.log.Debug("Failed to replace file: %v", err)
 		return err
 	}
 
