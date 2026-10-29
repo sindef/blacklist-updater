@@ -25,6 +25,17 @@ func ConvertToRFC1035(content string, whitelist []string) (string, error) {
 	return soaRecord + result, nil
 }
 
+func ConvertToRPZ(content string, whitelist []string) (string, error) {
+	result, err := convert(content, true, false, "rpz", whitelist)
+	if err != nil {
+		return "", err
+	}
+
+	header := "$TTL 300\n@\tIN\tSOA\tlocalhost. root.localhost. 1 3600 1800 604800 300\n@\tIN\tNS\tlocalhost.\n"
+
+	return header + result, nil
+}
+
 func convert(content string, stripRegex bool, keepWildcard bool, format string, whitelist []string) (string, error) {
 	lines := strings.Split(content, "\n")
 	var result []string
@@ -39,7 +50,7 @@ func convert(content string, stripRegex bool, keepWildcard bool, format string, 
 		}
 
 		if strings.HasPrefix(line, "#") || strings.HasPrefix(line, "!") {
-			if format == "rfc1035" {
+			if format == "rfc1035" || format == "rpz" {
 				if strings.HasPrefix(line, "!") {
 					result = append(result, strings.Replace(originalLine, "!", ";", 1))
 				} else {
@@ -141,6 +152,12 @@ func convert(content string, stripRegex bool, keepWildcard bool, format string, 
 						domain = domain + "."
 					}
 					result = append(result, domain+"\tIN\tA\t0.0.0.0")
+				case "rpz":
+					domain = strings.TrimPrefix(strings.TrimSuffix(domain, "."), ".")
+					if !isValidDomain(domain) {
+						continue
+					}
+					result = append(result, domain+".\tCNAME\t.", "*."+domain+".\tCNAME\t.")
 				default:
 					result = append(result, "0.0.0.0 "+domain)
 				}
