@@ -55,13 +55,18 @@ func (f *Fetcher) FetchAll(sources []config.Source) error {
 		groups[source.Filename] = append(groups[source.Filename], source)
 	}
 
+	failed := 0
 	for _, filename := range filenames {
 		if err := f.update(filename, groups[filename]); err != nil {
 			f.log.Error("Error updating %s: %v", filename, err)
+			failed++
 		}
 	}
 
 	f.log.Debug("Fetch cycle completed")
+	if failed > 0 {
+		return fmt.Errorf("%d of %d files failed to update", failed, len(filenames))
+	}
 	return nil
 }
 

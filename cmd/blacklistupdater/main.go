@@ -53,21 +53,25 @@ func main() {
 
 	f := fetcher.New(client, cfg.OutputDir, log, cfg.Whitelist)
 
-	if err := f.FetchAll(cfg.Sources); err != nil {
-		log.Error("Error fetching sources: %v", err)
-		os.Exit(1)
+	err = f.FetchAll(cfg.Sources)
+	if cfg.Interval <= 0 {
+		if err != nil {
+			log.Error("Error fetching sources: %v", err)
+			os.Exit(1)
+		}
+		return
 	}
 
-	if cfg.Interval > 0 {
-		log.Info("Monitoring enabled, next update at %s", time.Now().Add(time.Duration(cfg.Interval)*time.Second).Format(time.RFC3339))
-		ticker := time.NewTicker(time.Duration(cfg.Interval) * time.Second)
-		defer ticker.Stop()
-
-		for range ticker.C {
-			if err := f.FetchAll(cfg.Sources); err != nil {
-				log.Error("Error fetching sources: %v", err)
+	for {
+		next := time.Duration(cfg.Interval) * time.Second
+		if err != nil {
+			log.Error("Error fetching sources: %v", err)
+			if next > time.Minute {
+				next = time.Minute
 			}
-			log.Info("Next update scheduled for %s", time.Now().Add(time.Duration(cfg.Interval)*time.Second).Format(time.RFC3339))
 		}
+		log.Info("Next update scheduled for %s", time.Now().Add(next).Format(time.RFC3339))
+		time.Sleep(next)
+		err = f.FetchAll(cfg.Sources)
 	}
 }
